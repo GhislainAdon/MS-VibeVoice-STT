@@ -11,7 +11,7 @@
 ## Installation (une seule fois)
 Install de python 
 ```powershell
-# installation de scoop
+# installation de scoop et python 3.12.10 si python absent
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 scoop install python@3.12.10
