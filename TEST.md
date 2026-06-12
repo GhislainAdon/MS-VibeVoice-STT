@@ -9,7 +9,20 @@
 ---
 
 ## Installation (une seule fois)
-
+Install de python 
+```powershell
+# installation de scoop
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+scoop install python@3.12.10
+# Méthode install uv
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+   winget install ffmpeg
+# Prérequis : Python 3.9+, CUDA installé
+pip install openai-whisper
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+whisper audio.m4a --language fr --model medium
+```
 Ouvre **PowerShell en administrateur** et lance :
 
 ```powershell
